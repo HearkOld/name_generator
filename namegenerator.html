@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>RPG Game</title>
+<style type="text/css">
+body,td,th {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+}
+body {
+	background-color: #03F;
+}
+</style>
+</head>
+
+<body>
+<center><h1>Name Generator</h1></center>
+<!-- Game is below -->
+<script src =""></script>
+<script src="creator-utilities/loader.js">
+load("generate.js", "js");
+load("names.js", "js");
+document.getElementById( 'startGame()' ).onclick = function()
+{
+    startGame();
+};
+</script>
+<script src="generate.js">
+//	if (in_battle == true){
+//		alert('Battle Begun!')
+//	}
+</script>
+<script src ="names.js">
+</script>
+<center>By Yuuta Kirishima / Geoff / Dexter</center>
+<font color=cyan><b><hr /></b></font>
+<center><button onclick="generate()">Start Game</button></center>
+<center><button onclick="walk()">Walk</button><button onclick="attack()">Attack</button><button onclick="skills()">Skills</button><button onclick="Inventory()">Inventory</button></center>
+</body>
+</html>
