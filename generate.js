@@ -1,3 +1,3 @@
-OUTPUT_1 = prefix
-OUTPUT_2 = suffix
+OUTPUT_1 = Name.prefix
+OUTPUT_2 = Name.suffix
 
