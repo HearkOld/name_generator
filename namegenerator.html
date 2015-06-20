@@ -28,10 +28,30 @@ document.getElementById( 'startGame()' ).onclick = function()
     startGame();
 };
 </script>
-<script src="generate.js">
-//	if (in_battle == true){
-//		alert('Battle Begun!')
-//	}
+<script src="">
+var PART_1 = ["Hy", "Ry", "Ty", "Sy", "Ly", "He", "Re", "Te", "Me", "Ku", "Mu", "Hu", "Ru", "Ma", "A", "La", "Ha", "Ta", "Tr", "Pr", "Cr", "Ar"]
+
+
+var PART_2 = ["gon", "ron", "son", "bun", "gun", "lun", "ay", "eng", "zu", "uko", "sem", "sen", "ion", "ireon", "izon" ]
+
+var CLASSES = ["the quick", "of Bertha", "the weak", "the poor", "of Asgard", "of the sun", "of the moon", "the paladin", "the mage"]
+
+var Name = function(prefix, suffix, ending){
+  this.prefix = PART_1[Math.floor(Math.random()*PART_1.length)];
+  this.suffix = PART_2[Math.floor(Math.random()*PART_2.length)];
+  this.ending = CLASSES[Math.floor(Math.random()*CLASSES.length)];
+  
+}
+OUTPUT_1 = Name.prefix
+OUTPUT_2 = Name.suffix
+OUTPUT_3 = Name.ending
+var write = function(){
+  document.write(OUTPUT_1+ "" +OUTPUT_2+""OUTPUT_3)
+}
+var generate = function(){
+  write()
+}
+
 </script>
 <script src ="names.js">
 </script>
