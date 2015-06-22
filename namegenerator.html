@@ -52,6 +52,18 @@ var Town_Suf = ["nthia", "ia", "olyn", "ownia", "ian", "feea", "pora", "chi"]
 var generateTown = function(){
  alert(Town_Pre[Math.floor(Math.random()*Town_Pre.length)]+ "" +Town_Suf[Math.floor(Math.random()*Town_Suf.length)])
 }
+var submit = function(){
+	var chosep = prompt("Prefix or Suffix?", "prefix")
+	if (chosep.toLowerCase() == "prefix"){
+		var chosea = prompt("and What might this prefix be?", "wu")
+		PART_1.push(chosea)
+	} else if (chosep.toLowerCase() == "suffix"){
+		var choseb = prompt("and what might this suffix be?", "tang")
+		PART_2.push(choseb.toLowerCase())
+	} else {
+		alert("Invalid Input")
+	}
+}
 </script> 
 <center>By Yuuta Kirishima / Geoff / Dexter</center>
 <font color=cyan><b><hr /></b></font>
@@ -59,5 +71,6 @@ var generateTown = function(){
 </script>
 <center><button onclick="generate()">Generate</button></center>
 <center><button onclick="generateTown()">Generate Town Name</button></center>
+<center><button onclick="submit()">Submit a Name</button></center>
 </body>
 </html>
