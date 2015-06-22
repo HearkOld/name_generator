@@ -47,16 +47,15 @@ var write = function(){
 var generate = function(){
  alert(PART_1[Math.floor(Math.random()*PART_1.length)]+ "" +PART_2[Math.floor(Math.random()*PART_2.length)]+" "+CLASSES[Math.floor(Math.random()*CLASSES.length)])
 }
+var Town_Pre = ["Abr", "Aryn", "Lean", "Mynt", "Shar", "Qee", "Beso", "Omyn", "Lympho", "Des", "Lyn"]
+var Town_Suf = ["nthia", "ia", "olyn", "ownia", "ian", "feea", "pora", "chi"]
+var generateTown = function(){
+ alert(Town_Pre[Math.floor(Math.random()*Town_Pre.length)]+ "" +Town_Suf[Math.floor(Math.random()*Town_Suf.length)])
+}
 </script> 
 <center>By Yuuta Kirishima / Geoff / Dexter</center>
 <font color=cyan><b><hr /></b></font>
 <script src="towns.js">
-var Town_Pre = ["Abr", "Aryn", "Lean", "Mynt", "Shar", "Qee", "Beso", "Omyn", "Lympho", "Des", "Lyn"]
-var Town_Suf = ["nthia", "ia", "olyn", "ownia", "ian", "feea", "pora", "chi"]
-var generateTown = function(){
- alert(Town_Pre[Math.floor(Math.random()*Town_Pre.length)]+ "" +Town_Suf[Math.floor(Math.random()*Town_Suf.length)]+" ")
-}
-	
 </script>
 <center><button onclick="generate()">Generate</button></center>
 <center><button onclick="generateTown()">Generate Town Name</button></center>
