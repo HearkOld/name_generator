@@ -2,55 +2,53 @@
 <!-- OPEN SOURCE 
 If you plan on editing, please read the ReadMe File
 -->
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Name Generator</title>
-<style type="text/css">
-body,td,th {
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size: 14px;
-	color: #000;
-	font-weight: bold;
-}
-body {
-	background-color: #03F;
-}
-</style>
+<!DOCTYPE html>
+<html>
 
-<script src="main.js"></script>
-<script src="creator-utilities/loader.js">
-load("generate.js", "js");
-load("names.js", "js");
-load("towns.js", "js");
-load("main.js", "js");
-document.getElementById( 'generate()' ).onclick = function()
-{
-    generate();
-};
-document.getElementById( 'generateTown()' ).onclick = function()
-{
-    generateTown();
-};
-document.getElementById( 'submit()' ).onclick = function()
-{
-    submit();
-};
-</script>
+<head>
+    <script src="main.js"></script>
+    <script src="creator-utilities/loader.js">
+        load("generate.js", "js");
+        load("names.js", "js");
+        load("towns.js", "js");
+        load("main.js", "js");
+        document.getElementById('generate()').onclick = function() {
+            generate();
+        };
+        document.getElementById('generateTown()').onclick = function() {
+            generateTown();
+        };
+        document.getElementById('submit()').onclick = function() {
+            submit();
+        };
+    </script>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Name Generator by Heark / Yuuta Kirishima / Dexter / Geoff (We're all the same person)</title>
 </head>
 
 <body>
-<center><h1>Name Generator</h1></center>
-<!-- Game is below -->
-<script src =""></script>
 
-<script src="names.js"></script> 
-<script src="towns.js"></script>
-<script src="generate.js"></script>
-<center>By Yuuta Kirishima / Geoff / Dexter</center>
-<font color=cyan><b><hr /></b></font>
-<center><button onclick="generate()">Generate</button></center>
-<center><button onclick="generateTown()">Generate Town Name</button></center>
-<center><button onclick="submit()">Submit a Name</button></center>
-</body>
-</html>
+    <header>
+        <div class="container">
+            <h1>Name Generator by Heark / Yuuta Kirishima / Dexter / Geoff (We're all the same person)</h1>
+            <h2></h2>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="main_content">
+            <h3>
+<center><button onclick="generate()">Generate</button>
+<button onclick="generateTown()">Generate Town Name</button>
+<button onclick="submit()">Submit a Name</button></center>
+        	<center><a href="https://github.com/Heark/name_generator">Click here for source!</a></center>
+        	
+  </body>
+  </html>
