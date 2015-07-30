@@ -1,6 +1,12 @@
 Instructions:
 
-Open the namegenerator.html file.
+Go to http://namegen.no-ip.org/
+
+or
+
+Download the Zip 
+
+Open the index.html file.
 
 Click Generate.
 
