@@ -1,5 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- OPEN SOURCE -->
+<!-- OPEN SOURCE 
+If you plan on editing, please read the ReadMe File
+-->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -16,14 +18,23 @@ body {
 }
 </style>
 
-<script src="generate.js"></script>
+<script src="main.js"></script>
 <script src="creator-utilities/loader.js">
 load("generate.js", "js");
 load("names.js", "js");
 load("towns.js", "js");
+load("main.js", "js");
 document.getElementById( 'generate()' ).onclick = function()
 {
     generate();
+};
+document.getElementById( 'generateTown()' ).onclick = function()
+{
+    generateTown();
+};
+document.getElementById( 'submit()' ).onclick = function()
+{
+    submit();
 };
 </script>
 </head>
