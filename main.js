@@ -14,12 +14,12 @@ var write = function(){
   document.write(OUTPUT_1+ "" +OUTPUT_2+""+OUTPUT_3)
 }
 var generate = function(){
- document.getElementById('log').innerHTML += '<h1>'+PART_1[Math.floor(Math.random()*PART_1.length)]+ "" +PART_2[Math.floor(Math.random()*PART_2.length)]+" "+CLASSES[Math.floor(Math.random()*CLASSES.length)]+'</h1>'
+ document.getElementById('log').innerHTML = '<h1>'+PART_1[Math.floor(Math.random()*PART_1.length)]+ "" +PART_2[Math.floor(Math.random()*PART_2.length)]+" "+CLASSES[Math.floor(Math.random()*CLASSES.length)]+'</h1>'
 }
 var Town_Pre = ["Abr", "Aryn", "Lean", "Mynt", "Shar", "Qee", "Beso", "Omyn", "Lympho", "Des", "Lyn"]
 var Town_Suf = ["nthia", "ia", "olyn", "ownia", "ian", "feea", "pora", "chi"]
 var generateTown = function(){
- document.getElementById('log').innerHTML += '<h1>'+Town_Pre[Math.floor(Math.random()*Town_Pre.length)]+ "" +Town_Suf[Math.floor(Math.random()*Town_Suf.length)]+'</h1>'
+ document.getElementById('log').innerHTML = '<h1>'+Town_Pre[Math.floor(Math.random()*Town_Pre.length)]+ "" +Town_Suf[Math.floor(Math.random()*Town_Suf.length)]+'</h1>'
 }
 var submit = function(){
 	var chosep = prompt("Prefix or Suffix?", "prefix")
