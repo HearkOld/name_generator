@@ -33,4 +33,16 @@ var submit = function(){
 	} else {
 		alert("Invalid Input")
 	}
+document.getElementById( 'generate()' ).onclick = function()
+{
+    generate();
+};
+document.getElementById( 'generateTown()' ).onclick = function()
+{
+    generateTown();
+};
+document.getElementById( 'submit()' ).onclick = function()
+{
+    submit();
+};
 }})
