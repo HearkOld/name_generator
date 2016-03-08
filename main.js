@@ -32,15 +32,15 @@ var submit = function(){
 	} else {
 		alert("Invalid Input")
 	}
-document.getElementById( 'generate()' ).onclick = function()
+document.getElementById( 'gen' ).onclick = function()
 {
     generate();
 };
-document.getElementById( 'generateTown()' ).onclick = function()
+document.getElementById( 'towngen' ).onclick = function()
 {
     generateTown();
 };
-document.getElementById( 'submit()' ).onclick = function()
+document.getElementById( 'submit' ).onclick = function()
 {
     submit();
 };
